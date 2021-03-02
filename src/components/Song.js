@@ -1,8 +1,17 @@
 import React from 'react';
 
-const Song = () => {
+const Song = ({ url, AMLink, children }) => {
   return(
-    <p>A song</p>
+    <li>
+      <p></p>
+      <p>
+      {children}
+      </p>
+      <img src={url}/>
+      <br/>
+      <a href={AMLink}><button>View on Apple Music</button></a>
+      
+    </li>
   )
 }
 
